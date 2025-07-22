@@ -198,12 +198,12 @@ export const NavbarLogo = () => {
     >
       <Image
         src="/favicon.svg"
-        alt="Domora logo"
+        alt="Espiro logo"
         width={30}
         height={30}
         priority
       />
-      <span className="font-medium text-black dark:text-white">Domora</span>
+      <span className="font-medium text-black dark:text-white">Espiro</span>
     </Link>
   );
 };

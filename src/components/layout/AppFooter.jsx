@@ -17,7 +17,7 @@ const AppFooter = () => {
                             width={30}
                             height={30}
                         />
-                        <span className="font-large text-black dark:text-white">Domora</span>
+                        <span className="font-large text-black dark:text-white">Espiro</span>
                     </Link>
 
                     <div className="flex flex-wrap justify-center mt-6 -mx-4">
@@ -38,7 +38,7 @@ const AppFooter = () => {
                     <p className="text-sm text-gray-500 dark:text-gray-300">© Copyright 2025. All Rights Reserved.</p>
 
                     <div className="flex -mx-2">
-                        <Link href="https://github.com/pythonicforge/Domora" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300" aria-label="Github">
+                        <Link href="https://github.com/Akshuu1" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300" aria-label="Github">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
