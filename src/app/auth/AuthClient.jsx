@@ -1,4 +1,6 @@
-"use client"
+// AuthClient.jsx (you already gave this — it's perfect)
+
+"use client";
 
 import { useState } from "react";
 import { SignIn, SignUp } from "@/components/common/AuthComponents";
@@ -15,4 +17,4 @@ export default function AuthClient() {
             )}
         </>
     );
-};
+}
