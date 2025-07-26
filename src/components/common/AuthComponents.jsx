@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
-import { supabase } from "@/lib/supabaseClientgit"; // make sure this exists
+import { supabase } from "@/lib/supabaseClient"; // make sure this exists
 import {
     IconBrandGithub,
     IconBrandGoogle,
