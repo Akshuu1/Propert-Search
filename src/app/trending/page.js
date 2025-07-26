@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import { fetchProperties } from '@/lib/api';
 import Image from 'next/image';
+import { supabase } from '@/lib/supabaseClient';  // <---- import your existing client
 
 function Trending() {
     const [properties, setProperties] = useState([]);
@@ -12,8 +12,15 @@ function Trending() {
     useEffect(() => {
         const getTrendingProperties = async () => {
             try {
-                const allProperties = await fetchProperties();
-                setProperties(allProperties.slice(0, 6));
+                const { data, error } = await supabase
+                    .from('propertydata')
+                    .select('*')
+                    .order('created_at', { ascending: false })
+                    .limit(6);
+
+                if (error) throw error;
+
+                setProperties(data);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -26,7 +33,6 @@ function Trending() {
 
     const handlePropertyClick = (id) => {
         window.location.href = `/listings/${id}`;
-
     };
 
     if (loading) {
@@ -39,7 +45,6 @@ function Trending() {
             </div>
         );
     }
-
 
     if (properties.length === 0 || error) {
         return (
