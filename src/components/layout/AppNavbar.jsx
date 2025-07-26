@@ -11,7 +11,6 @@ import {
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import { AppDialogBox } from "../common/AppDialogBox";
 
 export function AppNavbar() {
     const navItems = [
@@ -40,7 +39,6 @@ export function AppNavbar() {
                     <NavItems items={navItems} />
                     <div className="flex items-center gap-4 relative"> {/* Added relative class */}
                         <NavbarButton variant="secondary">Login</NavbarButton>
-                        <AppDialogBox />
                     </div>
                 </NavBody>
 
@@ -70,7 +68,7 @@ export function AppNavbar() {
                                 className="w-full">
                                 Login
                             </NavbarButton>
-                            <AppDialogBox />
+
                         </div>
                     </MobileNavMenu>
                 </MobileNav>
