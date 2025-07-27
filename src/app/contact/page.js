@@ -1,7 +1,7 @@
 import AppContact from '@/components/layout/AppContact'
 
 export const metadata = {
-    title: "Domora",
+    title: "Espiro",
     description: "Smarter real estate at your fingertips",
 };
 

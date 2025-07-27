@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Domora",
+  title: "Espiro",
   description: "Smarter real estate at your fingertips",
 };
 
