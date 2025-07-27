@@ -1,4 +1,5 @@
-"use client"
+'use client'
+export const dynamic = 'force-dynamic'
 
 import React, { useEffect, useState } from "react"
 import { supabase } from "@/lib/supabaseClient"
@@ -11,6 +12,7 @@ export default function Page() {
 
   useEffect(() => {
     const fetchProperties = async () => {
+      // Just use the imported supabase client directly
       const { data, error } = await supabase.from("propertydata").select("*")
       if (error) {
         console.error("Supabase fetch error:", error)
